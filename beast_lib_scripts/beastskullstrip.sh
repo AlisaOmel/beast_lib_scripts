@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # 
 # BEaSTSkullStrip.sh
+# 
 # Using BEaST to do SkullStriping
 # [see here](https://github.com/FCP-INDI/C-PAC/wiki/Concise-Installation-Guide-for-BEaST) for instructions for BEaST.
 # 
