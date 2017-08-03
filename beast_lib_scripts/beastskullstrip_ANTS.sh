@@ -5,13 +5,13 @@
 # [see here](https://github.com/FCP-INDI/C-PAC/wiki/Concise-Installation-Guide-for-BEaST) for instructions for BEaST.
 # 
 # 
-# Benjamin Puccio, shell script for implemenatation of BEaST
+# Alisa Omelchenko and Benjamin Puccio, shell script for implemenatation of BEaST
 # Based off of (minor changes to):
 #
 # Qingyang Li
 # 2013-07-29
 #  
-# The script requires AFNI, BEaST, MINC toolkit. 
+# The script requires AFNI, BEaST, MINC, and ANTS toolkit. 
 
 do_anyway=1
 
