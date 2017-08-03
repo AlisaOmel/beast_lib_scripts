@@ -2,6 +2,9 @@
 # 
 # Set up library for beast with nifti
 # 
+# Alisa Omelchenko
+# 2017-08-02
+#
 # Ben Puccio
 # 2016-07-07
 #  
