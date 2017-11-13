@@ -4,7 +4,8 @@
 # 
 # Alisa Omelchenko
 # 2017-08-02
-#  
+# 
+#
 # ECHO config files at bottom of script doesnt work (library.masks.1mm, etc.)
 # Still need to copy other config files from another library (default.1mm.conf, etc.)
 
