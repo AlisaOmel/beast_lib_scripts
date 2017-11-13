@@ -1,6 +1,6 @@
 # beast_lib_scripts
 
-These scripts are used create a library that is used as a reference for FSL randomise skullstriping scripts (run-randomise.py).
+These scripts are used create a library that is used as a reference for skullstripping new subjects.
 The library can be created based on MINC (linear) or ANTS (non-linear) transformation. The MINC tends to create masks which are
 too small while the non-linear ANTS tends to create masks that are too big.
 
