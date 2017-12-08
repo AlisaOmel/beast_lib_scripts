@@ -24,6 +24,11 @@ fname=${filename%.nii.gz}
 
 mkdir -p /home/aomelche/library_NFBS_ANTS/NFBS/transform_files
 
+#Option for N4BiasFieldCorrection:
+#N4BiasFieldCorrection
+#echo ${inputFile}
+#/opt/ants/bin/N4BiasFieldCorrection -i ${inputFile} -o ${file}_N4.nii.gz -x ${LibPath}/masks/${fname}.nii.gz
+
 # normalize data using ANTS
 echo Normalizing stx images...
 antsRegistration --collapse-output-transforms 0 --dimensionality 3 --initial-moving-transform [$MNIHeadTemplatePATH,$inputFile,0] --interpolation Linear --output [${LibPath}/transform_files/${fname}_transform,${file}_Warped.nii.gz] --transform Rigid[0.1] --metric MI[$MNIHeadTemplatePATH,$inputFile,1,32,Regular,0.25] --convergence [1000x500x250x100,1e-08,10] --smoothing-sigmas 3.0x2.0x1.0x0.0 --shrink-factors 8x4x2x1 --use-histogram-matching 1 --transform Affine[0.1] --metric MI[$MNIHeadTemplatePATH,$inputFile,1,32,Regular,0.25] --convergence [1000x500x250x100,1e-08,10] --smoothing-sigmas 3.0x2.0x1.0x0.0 --shrink-factors 8x4x2x1 --use-histogram-matching 1 --transform SyN[0.1,3.0,0.0] --metric CC[$MNIHeadTemplatePATH,$inputFile,1,4] --convergence [100x100x70x20,1e-09,15] --smoothing-sigmas 3.0x2.0x1.0x0.0 --shrink-factors 6x4x2x1 --use-histogram-matching 1 --winsorize-image-intensities [0.01,0.99]
